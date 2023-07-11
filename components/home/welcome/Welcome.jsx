@@ -47,7 +47,7 @@ const Welcome = () => {
         {/*From stack overflow*/}
         <FlatList
           data={jobTypes}
-          renderItem={({ items: item }) => (
+          renderItem={({ item }) => (
             <TouchableOpacity
               style={styles.tab(activeJobType, item)}
               onPress={() => {
