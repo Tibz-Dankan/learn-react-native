@@ -43,8 +43,6 @@ const Welcome = () => {
       </View>
 
       <View style={styles.tabsContainer}>
-        {/* <ScrollView horizontal={false} style={{ width: "100%" }}> */}
-        {/*From stack overflow*/}
         <FlatList
           data={jobTypes}
           renderItem={({ item }) => (
@@ -62,7 +60,6 @@ const Welcome = () => {
           contentContainerStyle={{ columnGap: SIZES.small }}
           horizontal
         />
-        {/* </ScrollView> */}
       </View>
     </View>
   );
